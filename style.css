@@ -8,14 +8,15 @@ nav{
     display: flex;
     list-style: none;
     gap: 20px;
-    padding-right: 30px;
+  
 }
 .nav-links li a{
     text-decoration:none;
-    font-size:30px;
+    font-size:20px;
 }
 .logo{
-    width: 250px;
+    max-width: 200px;
+
 }
 body{
     background-color: white;
@@ -27,99 +28,115 @@ body{
     justify-content: space-around;
     align-items: center;
     background-color: #9375ff;
-    margin: 1cm;
-    margin-left: 0%;
-    margin-right: 0%;
-    height: 500px;
+    margin: 0;
+    
 
 }
 h2, p{
     color: white;
     font-size:30px;
     font-family: quicksand;
-    max-width: 500px;
+    max-width: 100%;
 }
 .button-1{
     background-color: yellow;
-    width: 200px;
-    height: 60px;
+    width: 30%;
     align-items: center;
     color:#00a69c;
-    font-size: 40px;
+    font-size: 30px;
     border-radius: 10%;
 }
 .part1-img{
-    max-width: 600px;
+    max-width: 100%;
 }
 .part2{
 color: #00a69c;
 text-align: center;
-font-size: 32px;
+font-size: 30px;
 }
 .part3{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     background-color: whitesmoke;
-    height: 300px;
+    min-height: 300px;
+}
+.part3-1{
+    background-color: white;
+}
+.div-img{
+    background-color: yellow;
+    border-radius: 50%;
+    padding: 20px;
 }
 .part3-img{
     max-width: 100px;
+}
+.part3-1p{
+    color: black;
+    text-align: center;
+}
+.part3-2{
+    background-color: white;
+}
+.div-img1{
     background-color: yellow;
-    border-color: white;
-    border-width: 50px;
-    border-style: solid;
+    border-radius: 50%;
+    padding: 20px;
 }
 .part3-img1{
     max-width: 100px;
+}
+.part3-2p{
+    color: black;
+    text-align: center;
+}
+.part3-3{
+    background-color: white;
+}
+.div-img2{
     background-color: yellow;
-    border-color: white;
-    border-width: 50px;
-    border-style: solid;
+    border-radius: 50%;
+    padding: 20px;
 }
 .part3-img2{
     max-width: 100px;
-    background-color: yellow;
-    border-color: white;
-    border-width: 50px;
-    border-style: solid;
+}
+.part3-3p{
+    color: black;
+    text-align: center;
 }
 .part4{
 display: flex;
-justify-content:space-between;
+justify-content:space-around;
 align-items: center;
 }
 .part4-img{
-    max-width: 300px;
-    margin-left: 3cm;
-    margin-top: 2cm;
+    max-width: 150px;
+    
 }
 h3 {
     color: #00a69c;
     font-size: 20px;
-    margin-left: 3cm;
-    margin-top: 3cm;
+   
 }
 .part4-p{
     color:silver;
     font-size: 16px;
-    margin-left: 3cm;
+  width: 500px;
 
 }
 ol{
     color:silver;
     font-size: 14px;
-    margin-left: 3cm; 
+   
 }
 .part4-img1{
-    max-width: 300px;
-    margin-left: 3cm;
-    margin-top: 2cm;
+    max-width: 150px;
+  
 }
 .part4-img2{
-    max-width: 300px;
-    margin-top: 2cm;
-    margin-left: 3cm;
+    max-width: 150px;
 }
 .part5{
     background-color: #0c1753;
@@ -184,7 +201,23 @@ footer{
     font-size: 20px;
 }
 @media only screen and (max-width: 600px) {
-    #part1{
+    .part1{
+        flex-direction: column
+    }
+}
+@media only screen and (max-width: 600px) {
+    .part2{
+        flex-direction: column
+    }
+}
+@media only screen and (max-width: 600px) {
+    .part3{
+        flex-direction: column
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .part4{
         flex-direction: column
     }
 }
